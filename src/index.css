@@ -7,7 +7,7 @@ html, body {
 #root, #map, #mapUI {
   width: inherit;
   height: inherit;
-  background-color: #000;
+  background-color: rgb(rgb(248, 245, 245));
 }
 .filterSubwayLines {
   position: absolute;

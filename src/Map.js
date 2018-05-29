@@ -16,16 +16,16 @@ config.params = {
   zoomControl: false,
   zoom: 13,
   maxZoom: 19,
-  minZoom: 11,
+  minZoom: 2,
   scrollwheel: false,
   legends: true,
   infoControl: false,
   attributionControl: true
 };
 config.tileLayer = {
-  uri: 'http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',
+  uri: 'http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
   params: {
-    minZoom: 11,
+    minZoom: 2,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
     id: '',
     accessToken: ''
@@ -158,10 +158,10 @@ class Map extends Component {
       color: '#fff',
       weight: 1,
       opacity: 0.5,
-      fillOpacity: 0.8
+      fillOpacity: 0.3
     };
 
-    return L.circleMarker(latlng, markerParams);
+    //return L.circleMarker(latlng);
   }
 
   onEachFeature(feature, layer) {
